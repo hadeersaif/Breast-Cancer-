@@ -1,0 +1,101 @@
+<html>
+<body>
+	<h3>Breast Cancer Death Prediction</h3>
+
+<div>
+<form action="/perdict" method="POST">
+	<label for="age">Age</label>
+	<input type="text" id="age" name="age">
+	<br>
+	<label for="w_class">Race</label>
+	<select id="w_class" name="w_class">
+	<option value=0>White</option>
+	<option value=1>Black</option>
+	<option value=2>Other</option>
+	</select>
+	<br>
+	<label for="martial_stat">Marital Status</label>
+	<select id="martial_stat" name="martial_stat">
+	<option value=0>Married</option>
+	<option value=1>Divorced</option>
+	<option value=2>Single</option>
+	<option value=3>Widowed</option>
+	</select>
+	<br>
+	<label for="t_stage">T Stage</label>
+	<select id="t_stage" name="t_stage">
+	<option value=0>T1</option>
+	<option value=1>T2</option>
+	<option value=2>T3</option>
+	<option value=3>T4</option>
+	</select>
+	<br>
+	<label for="n_stage">N Stage</label>
+	<select id="n_stage" name="n_stage">
+	<option value=0>N1</option>
+	<option value=1>N2</option>
+	<option value=2>N3</option>
+	</select>
+	<br>
+	<label for="satge_6th">6th Stage</label>  
+	<select id="satge_6th" name="satge_6th">
+	<option value=0>IIA</option>
+	<option value=1>IIIA</option>
+	<option value=2>IIIC</option>
+	<option value=3>IIB</option>
+	<option value=4>IIIB</option>
+	</select>
+	<br>
+	<label for="differentiate">differentiate</label>  
+	<select id="differentiate" name="differentiate">
+	<option value=0>Poorly differentiated</option>
+	<option value=1>Moderately differentiated</option>
+	<option value=2>Well differentiated</option>
+	<option value=3>Undifferentiated</option>
+	</select>
+	<br>
+	<label for="grade">Grade</label>
+	<select id="grade" name="grade">
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	<option value=4>anaplastic; Grade IV</option>
+	</select>
+	<br>
+	<label for="a_stage">A Stage</label>  
+	<select id="a_stage" name="a_stage">
+	<option value=0>Distant</option>
+	<option value=1>Regional</option>
+	</select>
+	<br>
+	<label for="t_size">Tumor Size </label> 
+	<input type="text" id="t_size" name="t_size">
+	<br>
+	<label for="estro_stat">Estrogen Status</label>  
+	<select id="estro_stat" name="estro_stat">
+	<option value=0>Negative</option>
+	<option value=1>Positive</option>
+	</select>
+	<br>
+	<label for="prog_stat">Progesterone Status</label>  
+	<select id="prog_stat" name="prog_stat">
+	<option value=0>Negative</option>
+	<option value=1>Positive</option>
+	</select>
+	<br>
+
+	<label for="node_exam">Regional Node Examined </label>
+	<input type="text" id="node_exam" name="node_exam">
+	<br>
+	<label for="node_pos">Reginol Node Positive </label> Survival Months
+
+	<input type="text" id="node_pos" name="node_pos">
+	<br>
+	<label for="month">Survival Months </label> 
+	<input type="text" id="month" name="month">
+	<br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
